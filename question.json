@@ -88,12 +88,12 @@
         },
         {
             "id":7,
-            "question":"qui repare le bras mechanique d'edward elric",
+            "question":"qui est le PIRE Mangemorts (une seul reponse)",
             "reponse":[
-                {"labelle":"Winry Rockbell","valeur":true},
-                {"labelle":"Roy Mustang","valeur":false},
-                {"labelle":"Alex Louis Armstrong","valeur":false},
-                {"labelle":"Sarah Rockbell","valeur":false}
+                {"labelle":"Peter Pettigrow","valeur":false},
+                {"labelle":"Fenrir Greyback","valeur":false},
+                {"labelle":"Lucius Malefoy","valeur":false},
+                {"labelle":"Severus Rogue","valeur":true}
             ]
         }
     ],
