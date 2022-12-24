@@ -1,0 +1,103 @@
+{
+    "enter":[
+        "sauras-tu reussir ce test et avoir droit a ton cadeau ?¿",
+        "pour chaques question tu auras des choix, répond y correctement et tu avanceras vers ton <strong style='color:red'>précieux !</strong>",
+        "c'est partie !?",
+        "(ATTENTION cetaine question peuvent avoir plusieurs reponses (bonne chance :P))"
+    ],
+    "question":[
+        {   
+            "id":0,
+            "question":"qui à été le meilleur parent pour naruto",
+            "reponse":[
+                {"labelle":"Minato","valeur":true},
+                {"labelle":"Kushina","valeur":true},
+                {"labelle":"kakashi","valeur":true},
+                {"labelle":"3eme hokage","valeur":false}
+                ]
+        },
+        {
+            "id":1,
+            "question":"qui était premier rival de son goku",
+            "reponse":[
+                {"labelle":"vegeta","valeur":false},
+                {"labelle":"Yamcha","valeur":false},
+                {"labelle":"krilin","valeur":true},
+                {"labelle":"Tien Shinhan","valeur":false}
+            ]
+        },
+        {
+            "id":2,
+            "question":"de quel couleur est le ruban de nezuko",
+            "reponse":[
+                {"labelle":"rose","valeur":true},
+                {"labelle":"vert","valeur":false},
+                {"labelle":"gris","valeur":false},
+                {"labelle":"elle en a pas","valeur":false}
+            ]
+        },
+        {
+            "id":3,
+            "question":"à quelle période fleurisent les Sakura",
+            "reponse":[
+                {"labelle":"debut été","valeur":false},
+                {"labelle":"debut Printemps","valeur":true},
+                {"labelle":"fin Hiver","valeur":false},
+                {"labelle":"fin Printemps","valeur":false}
+            ]
+        },
+        {
+            "id":4,
+            "question":"quel est le trouble de la personnalité de DEATH THE KID ?",
+            "reponse":[
+                {"labelle":"l'hypocondrie","valeur":false},
+                {"labelle":"syndrome de lancelot","valeur":false},
+                {"labelle":"Symétrie","valeur":true},
+                {"labelle":"Les doutes répétés","valeur":true}
+            ]
+        },
+        {
+            "id":5,
+            "question":"qu'elle est le type de magie utilisé par le premier mechant de Asta",
+            "reponse":[
+                {"labelle":"aiment","valeur":false},
+                {"labelle":"roche","valeur":false},
+                {"labelle":"metal","valeur":false},
+                {"labelle":"chaines","valeur":true}
+            ]
+        },
+        {
+            "id":6,
+            "question":"de quel yokai est inspirer kyubi",
+            "reponse":[
+                {"labelle":"Kaijū","valeur":false},
+                {"labelle":"Kappa","valeur":false},
+                {"labelle":"kitsune","valeur":true},
+                {"labelle":"kami","valeur":false}
+            ]
+        },
+        {
+            "id":7,
+            "question":"qui repare le bras mechanique d'edward elric",
+            "reponse":[
+                {"labelle":"Winry Rockbell","valeur":true},
+                {"labelle":"Roy Mustang","valeur":false},
+                {"labelle":"Alex Louis Armstrong","valeur":false},
+                {"labelle":"Sarah Rockbell","valeur":false}
+            ]
+        },
+        {
+            "id":7,
+            "question":"qui repare le bras mechanique d'edward elric",
+            "reponse":[
+                {"labelle":"Winry Rockbell","valeur":true},
+                {"labelle":"Roy Mustang","valeur":false},
+                {"labelle":"Alex Louis Armstrong","valeur":false},
+                {"labelle":"Sarah Rockbell","valeur":false}
+            ]
+        }
+    ],
+    "reponse":[],
+
+    "fin":["bravo tu a fini ce test"]
+}

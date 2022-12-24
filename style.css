@@ -1,0 +1,43 @@
+.reponseChoisi{
+    background: grey;
+    border: none;
+}
+.bonne-reponse{
+    background-color: green;
+}
+.mauvaise-reponse{ 
+    background-color: darkred;
+}
+.hiddenButton{
+    display: none;
+}
+
+#structure-question{
+    display: flex;
+    color: #5e0098;
+    margin-top: 20vh;
+}
+#structure-question div{
+    width: 100%;
+}
+.content{
+    margin-bottom: 10vh;
+    text-align: center;
+}
+.question-list{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.question{
+    width: 40%;
+    height: 15vh;
+}
+#block_sur{
+    text-align: center;
+}
+
+body{
+    background: #d58d81;
+}
