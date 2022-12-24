@@ -37,7 +37,14 @@
 #block_sur{
     text-align: center;
 }
-
+.img{
+    border: solid;
+    width: 40vw;
+}
+.block_flex{
+    display: flex;
+    justify-content: space-around;
+}
 body{
     background: #d58d81;
 }

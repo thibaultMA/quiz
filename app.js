@@ -4,6 +4,9 @@ let idQuestionPrefix = "structure-contenue";
 let idButtonReponse = "#reponse";
 let buttonTest = document.querySelector("#test01");
 let boutonConfirmer = document.querySelector("#confirmer");
+let p_Total=document.querySelector("#total");
+let span_Bonne_Reponse = document.querySelector("#bonne_reponses");
+let span_total_bonne_reponses = document.querySelector("#total_bonne_reponses");
 let modaleType = document.querySelector(idModalType);
 let blockQuestion = document.querySelector("#structure-question");
 let indexQuestion = 0;
@@ -42,10 +45,13 @@ window.onload = function (event) {
       );
       blockQuestion.append(question_actuel.HTML);
       buttonTest.classList.add("hiddenButton");
-
       localStorage.setItem("question"+indexModalQuestion,JSON.stringify(question_actuel))
-      questionTotal += 4
+      p_Total.hidden=false
+      span_Bonne_Reponse.innerText =bonneReponse
+      span_total_bonne_reponses.innerText = questionTotal
+      
     } else {
+      p_Total.hidden
       let eee = modaleType.cloneNode(true);
       eee.id = idQuestionPrefix + indexModalQuestion;
       eee.hidden = false;
@@ -53,8 +59,13 @@ window.onload = function (event) {
       content.innerHTML = dataa[dataChoix][indexQuestion];
       
       blockQuestion.insertBefore(eee, blockQuestion.firstChild);
+      if (indexdata == 2 && (dataa[dataChoix].length-1) == indexQuestion) {
+        console.log("fzefez");
+        document.querySelector('#lien_page').hidden = false
+        buttonTest.hidden = true
+      }
     }
-    console.log(this);
+    
     indexQuestion++;
     indexModalQuestion++;
 
@@ -96,7 +107,7 @@ function setDataChoix(indexdataTemp) {
 function checkquestions() {
 
   const question = new Question(JSON.parse(localStorage.getItem('question'+(indexModalQuestion-1))));
-  console.log(question.valideQuestion());
+  question.valideQuestion()
 }
 
 class Question {
@@ -131,7 +142,7 @@ class Question {
   }
 
   actions() {
-    console.log(this.HTML);
+
     this.HTML.addEventListener("click", (e) => {
       let questionCliquer = e.target;
       if(questionCliquer.type=="submit"){
@@ -208,7 +219,10 @@ class Question {
     this.reponseList.forEach((question,i)=>{
       if (question.valeur == Boolean(question_list[i].value)) {
         question_list[i].classList.add('bonne-reponse')
-        bonneReponse++
+        questionTotal++
+        if (question_list[i].classList.contains('reponseChoisi')) {
+          bonneReponse++
+        }
       }else{
         question_list[i].classList.add('mauvaise-reponse')
       }
